@@ -12,7 +12,7 @@ import { Response } from 'express';
 import { BrandsService } from '../services/brands.service';
 import { BrandDto } from '../../dto/Brand.dto';
 import { ApiTags } from '@nestjs/swagger';
-@ApiTags('Colors')
+@ApiTags('Brands')
 @Controller('brands')
 export class BrandsController {
   constructor(private brandService: BrandsService) {}
