@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  cars-api-beu:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://root:password@postgres:5432/db
+      NODE_ENV: development
+    ports:
+      - '3000:3000'
+    links:
+      - postgres
+
+  postgres:
+    image: postgres:14.5
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=cars-api
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgresql-volume:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  postgresql-volume:
