@@ -1,73 +1,47 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Prueba técnica Backend Beu.app realizada por Andrés Javier Nazzari
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Para iniciar el proyecto, se debe ejecutar el siguiente comando:
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+`docker-compose up`
 
-## Description
+La documentacion se puede ver a travez de swagger en la ruta http://localhost:3000/api/docs
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+# Requerimientos
 
-## Installation
+## 1. Crear un CRUD donde administremos el registro de vehículos con sus características básicas, marcas y posibles colores.
 
-```bash
-$ npm install
-```
+Los path deben ser:
 
-## Running the app
+### Vehicles
 
-```bash
-# development
-$ npm run start
+- api/vehicle (POST)
+- api/vehicle/{id} (PUT)
+- api/vehicle (Get)
+- api/vehicle/{id} (Get)
+- api/vehicle/{id} (Delete)
 
-# watch mode
-$ npm run start:dev
+Nota: Para los GET debemos traer adicionalmente la información de la marca y colores correspondientes al vehículo.
 
-# production mode
-$ npm run start:prod
-```
+### Brands
 
-## Test
+- api/brand (POST)
+- api/brand/{id} (PUT)
+- api/brand(Get)
+- api/brand/{id} (Delete)
 
-```bash
-# unit tests
-$ npm run test
+### Colors
 
-# e2e tests
-$ npm run test:e2e
+- api/color(POST)
+- api/color/{id} (PUT)
+- api/color (Get)
+- api/color/{id} (Delete)
 
-# test coverage
-$ npm run test:cov
-```
+## 3. Usar NestJs Preferiblemente. (Es válido si solo usan NodeJs u otro Framework)
 
-## Support
+## 4. Adjuntar la Colección de (Postman o el Curl)
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+## 5. Entregar el Dockerfile (Opcional)
 
-## Stay in touch
+## 6. Como plus, puedes agregar las validaciones que creas pertinentes y buenas prácticas.
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+NOTA: El repositorio debe estar alojado en Github y debe ser un repositorio privado invitando a los usuarios “ingcrengifo” y “djteniente”.
