@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "6da94d9a-de6a-4267-8808-35722e579aee",
+		"name": "Seed",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18882512"
+	},
+	"item": [
+		{
+			"name": "Add colors and brands seeds",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/seeds",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"seeds"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
