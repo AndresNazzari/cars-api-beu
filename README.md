@@ -1,4 +1,6 @@
-# Prueba técnica Backend Beu.app realizada por Andrés Javier Nazzari
+# Ejercicio Backend realizado por Andrés Javier Nazzari
+
+## Crear un CRUD donde administremos el registro de vehículos con sus características básicas, marcas y posibles colores.
 
 Para iniciar el proyecto, se debe ejecutar el siguiente comando:
 
@@ -43,5 +45,3 @@ Nota: Para los GET debemos traer adicionalmente la información de la marca y co
 ## 5. Entregar el Dockerfile (Opcional)
 
 ## 6. Como plus, puedes agregar las validaciones que creas pertinentes y buenas prácticas.
-
-NOTA: El repositorio debe estar alojado en Github y debe ser un repositorio privado invitando a los usuarios “ingcrengifo” y “djteniente”.
