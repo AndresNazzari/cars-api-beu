@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
+import { env } from 'process';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -13,7 +14,7 @@ async function bootstrap() {
     .build();
   const swaggerDocument = SwaggerModule.createDocument(app, swaggerOptions);
   SwaggerModule.setup('api/docs', app, swaggerDocument);
-
-  await app.listen(3000);
+  console.log(process.env.PORT);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
